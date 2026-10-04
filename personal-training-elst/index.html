@@ -231,7 +231,10 @@ section.sec { padding-block: clamp(72px, 10vw, 128px); }
 .about-text p { color: var(--muted); font-size: 1.08rem; }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; }
 .chips span { padding: 8px 14px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line); font-size: .85rem; font-weight: 500; }
-.chips span.todo { border-style: dashed; color: var(--muted); }
+.stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 4px; }
+.stats div { background: var(--surface); border-radius: var(--r-lg); padding: 18px 16px; display: grid; gap: 2px; box-shadow: var(--shadow); }
+.stat-num { font-size: clamp(1.6rem, 3.5vw, 2.2rem); font-weight: 700; letter-spacing: -0.04em; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.stat-lbl { font-size: .8rem; color: var(--muted); }
 
 /* Tarieven */
 .prices { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
@@ -423,13 +426,19 @@ footer .tag { letter-spacing: .28em; text-transform: uppercase; font-weight: 600
       <div class="about-text reveal">
         <p class="eyebrow">Over Rino</p>
         <h2>Hoi, ik ben Rino.</h2>
-        <p>Met De Nijs Training help ik mensen in Elst sterker, fitter en gezonder te worden. Ik train je persoonlijk, één op één of samen met een maatje, en stem elke training af op jouw doel.</p>
-        <p>Delivering good health: daar draait het bij mij om. Geen standaardschema's, wel een aanpak die bij jou en je agenda past.</p>
+        <p>Sinds 2018 help ik mensen sterker en fitter te worden. Jarenlang gaf ik personal training in Elst en bij CrossFit Nijmegen. Eind 2022 begon ik mijn eigen bedrijf: De Nijs Training.</p>
+        <p>Ik ben afgestudeerd aan het CIOS Arnhem als coördinator sportinstructie, training en coaching, en ik ben opgeleid tot sportmasseur. Ik train mensen van alle leeftijden.</p>
+        <p>Bij mij krijg je geen standaardschema. Na de intake maak ik een programma dat past bij jouw doel, je lichaam en je agenda. Delivering good health: daar draait het om.</p>
+        <div class="stats">
+          <div><span class="stat-num">2018</span><span class="stat-lbl">trainer sinds</span></div>
+          <div><span class="stat-num">8+</span><span class="stat-lbl">jaar ervaring</span></div>
+          <div><span class="stat-num">2022</span><span class="stat-lbl">eigen bedrijf</span></div>
+        </div>
         <div class="chips" aria-label="Opleiding en ervaring">
-          <span>Personal trainer</span>
-          <span class="todo">+ opleiding uit cv</span>
-          <span class="todo">+ certificaten uit cv</span>
-          <span class="todo">+ ervaring uit cv</span>
+          <span>CIOS Arnhem · mbo 4 sportinstructie, training en coaching</span>
+          <span>Sportmasseur</span>
+          <span>Trainer bij CrossFit Nijmegen (2018–2020)</span>
+          <span>Programma op maat</span>
         </div>
       </div>
     </div>
