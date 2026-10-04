@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>PT Elst</title>
-<meta name="description" content="Personal training in Elst (Overbetuwe). 1-op-1 begeleiding, duo-training en small group. Plan een gratis kennismaking.">
+<title>Rino de Nijs Personal Training</title>
+<meta name="description" content="Personal training en small group training in Elst met Rino de Nijs (YOUR | physical coach). Plan een gratis, vrijblijvende intake.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
@@ -152,7 +152,7 @@ section.block { padding-block: clamp(64px, 9vw, 112px); border-top: 1px solid va
 .steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px; counter-reset: step; }
 .steps li { counter-increment: step; display: grid; gap: 10px; align-content: start; padding-top: 18px; border-top: 1px solid color-mix(in srgb, var(--deep-ink) 25%, transparent); }
 .steps li::before {
-  content: "Week " attr(data-week);
+  content: "Stap " attr(data-step);
   font-family: var(--font-mono); font-size: 0.8rem; font-weight: 600; letter-spacing: .08em; color: var(--accent);
 }
 .steps p { color: color-mix(in srgb, var(--deep-ink) 75%, transparent); }
@@ -213,20 +213,21 @@ textarea { min-height: 110px; resize: vertical; }
 .form-msg { font-size: var(--step--1); color: var(--muted); }
 .form-msg.ok { color: var(--ink); font-weight: 500; }
 
+.logo small { display: block; font-family: var(--font-mono); font-weight: 600; font-stretch: 100%; font-size: 0.68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-top: 2px; }
+.notice { border-left: 3px solid var(--accent); padding: 10px 14px; background: var(--surface); font-size: var(--step--1); color: var(--ink); border-radius: 0 var(--radius) var(--radius) 0; }
 footer { border-top: 1px solid var(--line); padding-block: 32px; font-size: var(--step--1); color: var(--muted); }
 footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
 </style>
 </head>
 <body>
-
 <header class="site-header">
   <div class="wrap">
-    <a class="logo" href="#top">PT<span>/</span>ELST</a>
+    <a class="logo" href="#top">RINO<span>/</span>DE NIJS<small>YOUR | physical coach</small></a>
     <nav class="nav" aria-label="Hoofdmenu">
       <a class="hide-sm" href="#aanbod">Aanbod</a>
-      <a class="hide-sm" href="#werkwijze">Werkwijze</a>
+      <a class="hide-sm" href="#over">Over Rino</a>
       <a class="hide-sm" href="#tarieven">Tarieven</a>
-      <a class="btn btn-primary" href="#contact">Gratis kennismaking</a>
+      <a class="btn btn-primary" href="#contact">Gratis intake</a>
     </nav>
   </div>
 </header>
@@ -235,38 +236,38 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
   <section class="hero">
     <div class="wrap">
       <div>
-        <p class="label">Personal training · Elst, Overbetuwe</p>
-        <h1 style="margin-top:18px">Sterker worden <em>in je eigen dorp.</em></h1>
-        <p class="lead">Persoonlijke begeleiding in een rustige privéstudio in Elst. Een plan dat past bij jouw lichaam, je agenda en je doel, en een trainer die bijhoudt of het werkt.</p>
+        <p class="label">Personal training · Elst</p>
+        <h1 style="margin-top:18px">Haal het maximale <em>uit 30 minuten.</em></h1>
+        <p class="lead">Personal training en small group training bij YOUR | physical coach in Elst. Energiek, uitdagend en afgestemd op jouw doel. Ik coach je op sport, voeding en mindset.</p>
         <div class="actions">
-          <a class="btn btn-primary" href="#contact">Plan een gratis kennismaking →</a>
+          <a class="btn btn-primary" href="#contact">Plan een gratis intake →</a>
           <a class="btn btn-ghost" href="#werkwijze">Zo werkt het</a>
         </div>
         <div class="facts">
-          <span><b>1-op-1</b> of met z'n tweeën</span>
-          <span><b>06:30–21:00</b> op werkdagen</span>
-          <span>Vlak bij <b>station Elst</b></span>
+          <span><b>30 min</b> personal training</span>
+          <span>Small group <b>max. 6</b> personen</span>
+          <span><b>Celsiusweg 18K</b>, Elst</span>
         </div>
       </div>
 
       <aside class="card" aria-label="Voorbeeld van een trainingslog">
         <div class="card-head">
           <strong>Trainingslog</strong>
-          <span class="label">Wk 6 · di 07:00</span>
+          <span class="label">di 07:00 · 30 min</span>
         </div>
         <table class="log">
           <thead>
             <tr><th>Oefening</th><th class="num">Sets × reps</th><th class="num">Kg</th></tr>
           </thead>
           <tbody>
-            <tr><td>Goblet squat</td><td class="num">3 × 10</td><td class="num">20</td></tr>
-            <tr class="pr"><td>Trap bar deadlift</td><td class="num">4 × 6</td><td class="num">75 ↑</td></tr>
-            <tr><td>Roeien aan kabel</td><td class="num">3 × 12</td><td class="num">35</td></tr>
-            <tr><td>Split squat</td><td class="num">3 × 8/8</td><td class="num">2×10</td></tr>
-            <tr><td>Farmer carry</td><td class="num">4 × 30 m</td><td class="num">2×22</td></tr>
+            <tr><td>Back squat</td><td class="num">4 × 6</td><td class="num">60</td></tr>
+            <tr class="pr"><td>Deadlift</td><td class="num">3 × 5</td><td class="num">80 ↑</td></tr>
+            <tr><td>Kettlebell swing</td><td class="num">3 × 15</td><td class="num">16</td></tr>
+            <tr><td>Push press</td><td class="num">3 × 8</td><td class="num">30</td></tr>
+            <tr><td>Finisher: row + burpees</td><td class="num">EMOM 6'</td><td class="num">–</td></tr>
           </tbody>
         </table>
-        <p class="card-foot">Deadlift <b>+15 kg</b> sinds de intake. Elke sessie wordt vastgelegd, zodat je ziet wat je opbouwt.</p>
+        <p class="card-foot">Voorbeeld van een sessie. <b>Kort en intensief</b>: een effectieve training hoeft niet langer te duren.</p>
       </aside>
     </div>
   </section>
@@ -275,29 +276,24 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
     <div class="wrap">
       <div class="section-head">
         <p class="label">Aanbod</p>
-        <h2>Training die past bij waar je nu staat</h2>
-        <p>Of je nu weer wilt beginnen na jaren stilzitten, van rugklachten af wilt of sterker wilt worden voor je sport.</p>
+        <h2>Personal training is meer dan begeleid sporten</h2>
+        <p>Iedereen is uniek en verdient een eigen aanpak. Daarom train je bij mij aan jouw persoonlijke doelen, alleen of in een kleine groep.</p>
       </div>
       <div class="offer">
         <article>
-          <span class="meta">60 min · 1 persoon</span>
+          <span class="meta">30 min · 1-op-1</span>
           <h3>Personal training</h3>
-          <p>Volledige aandacht voor jouw techniek en tempo. Ieder programma wordt per blok van zes weken bijgesteld.</p>
+          <p>Een korte, intensieve training met volle aandacht voor jou. Niet om het makkelijker te maken, maar omdat effectief trainen niet langer hoeft te duren.</p>
         </article>
         <article>
-          <span class="meta">60 min · 2 personen</span>
-          <h3>Duo-training</h3>
-          <p>Samen met je partner, vriend of collega. Je motiveert elkaar en deelt de kosten.</p>
+          <span class="meta">60 min · max. 6 personen</span>
+          <h3>Small group training</h3>
+          <p>In een uur train je je hele lichaam, elk aan je eigen doel. Een fijne groepsdynamiek waarin iedereen elkaar uitdaagt en meedoet op zijn eigen niveau.</p>
         </article>
         <article>
-          <span class="meta">45 min · max. 4 personen</span>
-          <h3>Small group</h3>
-          <p>Vaste groepjes op vaste tijden. Persoonlijk genoeg om op je vorm te letten, gezellig genoeg om vol te houden.</p>
-        </article>
-        <article>
-          <span class="meta">Per 4 weken</span>
-          <h3>Leefstijlcoaching</h3>
-          <p>Eten, slaap en dagelijkse beweging. Haalbare afspraken die je thuis kunt volhouden, als aanvulling op je training.</p>
+          <span class="meta">Ook buiten de studio</span>
+          <h3>Voeding en mindset</h3>
+          <p>Resultaat boek je niet alleen in de les. Ik begeleid je ook daarbuiten en kijk naar het complete plaatje: training, voeding en mindset.</p>
         </article>
       </div>
     </div>
@@ -307,25 +303,25 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
     <div class="wrap">
       <div class="section-head">
         <p class="label">Werkwijze</p>
-        <h2>Van eerste gesprek tot meetbaar resultaat</h2>
-        <p>Je traint volgens een plan, en elke zes weken kijken we samen of het werkt.</p>
+        <h2>Zo begin je</h2>
+        <p>Je start altijd met een gratis intake. Daarna bepaal je zelf of je bij ons wilt trainen.</p>
       </div>
       <ol class="steps">
-        <li data-week="0">
-          <h3>Kennismaking</h3>
-          <p>Een gratis gesprek van 30 minuten in de studio. We bespreken je doel, je ervaring en eventuele blessures.</p>
+        <li data-step="1">
+          <h3>Gratis intake</h3>
+          <p>We kijken samen naar je doelen en hoe je die gaat bereiken. Vrijblijvend.</p>
         </li>
-        <li data-week="1">
-          <h3>Intake en nulmeting</h3>
-          <p>Beweegscreening, kracht- en conditietests en, als je wilt, lichaamsmetingen. Dit wordt je startpunt.</p>
+        <li data-step="2">
+          <h3>Jij kiest</h3>
+          <p>Na de intake maak je zelf de keuze: personal training, small group of een combinatie.</p>
         </li>
-        <li data-week="1–6">
-          <h3>Eerste trainingsblok</h3>
-          <p>Een programma op maat, één tot drie keer per week. Je krijgt ook oefeningen mee voor thuis.</p>
+        <li data-step="3">
+          <h3>Trainen</h3>
+          <p>Kracht en conditie, op jouw niveau. Ik daag je uit om steeds een stap verder te gaan.</p>
         </li>
-        <li data-week="6">
-          <h3>Evaluatie</h3>
-          <p>We herhalen de metingen, vergelijken met je startpunt en stellen het volgende blok samen.</p>
+        <li data-step="4">
+          <h3>Coaching daarbuiten</h3>
+          <p>Met tips voor voeding en mindset houd je ook tussen de trainingen door koers.</p>
         </li>
       </ol>
     </div>
@@ -333,17 +329,19 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
 
   <section class="block" id="over">
     <div class="wrap about">
-      <div class="portrait" role="img" aria-label="Plaats voor een foto van de trainer">Plaats hier je eigen foto<br>(staand, 4:5)</div>
+      <div class="portrait" role="img" aria-label="Plaats voor een foto van Rino">Plaats hier je eigen foto<br>(staand, 4:5)</div>
       <div class="about-text">
-        <p class="label">Over mij</p>
-        <h2>Een trainer uit de buurt</h2>
-        <p>Ik woon en werk in Elst en train mensen van 20 tot 70+. Sommigen willen fitter de dag door, anderen werken toe naar een halve marathon of willen na een blessure weer vertrouwen in hun lichaam.</p>
-        <p>Mijn aanpak is nuchter: goede techniek, geleidelijk zwaarder, en geen trainingen die je de volgende dag voor niets kapot maken. Ik schrijf alles op, zodat jij ziet hoe je vooruitgaat.</p>
-        <div class="creds" aria-label="Opleidingen">
-          <span>Personal Trainer N4</span>
-          <span>Leefstijlcoach</span>
-          <span>Kettlebell-instructeur</span>
-          <span>EHBO / AED</span>
+        <p class="label">Over Rino</p>
+        <h2>Van turnmat naar krachttraining</h2>
+        <p>Sport is altijd een rode draad in mijn leven geweest. Ik begon jong met turnen en trampolinespringen: krachtige, dynamische sporten waarin je grenzen verlegt en een flinke dosis lef nodig hebt. Op mijn veertiende werd ik tweede van Nederland op de trampoline.</p>
+        <p>Nog steeds sport ik dagelijks, nu vooral krachttraining en CrossFit. Bij YOUR | physical coach geef ik personal training en small group training.</p>
+        <p>Mijn stijl is energiek en motiverend. Ik daag je uit om een stap verder te gaan en het maximale uit je training te halen. Door mijn ervaring schakel ik snel en zorg ik in een groep voor de juiste differentiatie, zodat iedereen op zijn eigen niveau meedoet.</p>
+        <div class="creds" aria-label="Opleiding en ervaring">
+          <span>CIOS Sport- en bewegingscoördinator niv. 4</span>
+          <span>CrossFit</span>
+          <span>Fitnessbranche</span>
+          <span>5 jaar turnen</span>
+          <span>2e van NL trampoline (2011)</span>
         </div>
       </div>
     </div>
@@ -353,31 +351,32 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
     <div class="wrap">
       <div class="section-head">
         <p class="label">Tarieven</p>
-        <h2>Duidelijke prijzen, geen jaarabonnement</h2>
+        <h2>Hoe vaker je traint, hoe voordeliger</h2>
+        <p>Bij small group training daalt de prijs per les naarmate je vaker per week komt. Tijdens de intake krijg je een overzicht van alle tarieven.</p>
       </div>
       <div class="prices">
         <div class="price">
-          <span class="label">Kennismaking</span>
+          <span class="label">Intake</span>
           <div class="amount">€0</div>
-          <p>30 minuten gesprek en rondleiding in de studio. Je zit nergens aan vast.</p>
+          <p>Gratis en vrijblijvend. We bespreken je doelen en hoe je die bereikt.</p>
         </div>
         <div class="price">
-          <span class="label">Losse sessie</span>
-          <div class="amount">€65 <small>/ 60 min</small></div>
-          <p>Om te proberen, of als aanvulling op je eigen training.</p>
+          <span class="label">Small group · 1× per week</span>
+          <div class="amount">Basis</div>
+          <p>Het standaardtarief per les.</p>
+        </div>
+        <div class="price">
+          <span class="label">Small group · 2× per week</span>
+          <div class="amount">Lager</div>
+          <p>Een lagere prijs per les.</p>
         </div>
         <div class="price featured">
-          <span class="label">10-rittenkaart</span>
-          <div class="amount">€590 <small>/ €59 per sessie</small></div>
-          <p>Inclusief intake, nulmeting en evaluatie. Vier maanden geldig.</p>
-        </div>
-        <div class="price">
-          <span class="label">Duo-training</span>
-          <div class="amount">€40 <small>p.p. / 60 min</small></div>
-          <p>Ook als 10-rittenkaart: €375 per persoon.</p>
+          <span class="label">Small group · 3× per week</span>
+          <div class="amount">Laagst</div>
+          <p>De voordeligste prijs per les.</p>
         </div>
       </div>
-      <p class="note">Alle prijzen zijn inclusief btw. Een afspraak kun je tot 24 uur van tevoren kosteloos verzetten.</p>
+      <p class="note">Personal training (30 minuten): prijs op aanvraag.</p>
     </div>
   </section>
 
@@ -389,24 +388,24 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
       </div>
       <div class="faq">
         <details>
-          <summary>Ik heb in jaren niet gesport. Is dit iets voor mij?</summary>
-          <p>Juist dan. We beginnen op jouw niveau en bouwen rustig op. De meeste mensen die starten hebben een tijd niets gedaan.</p>
+          <summary>Waarom duurt een personal training maar 30 minuten?</summary>
+          <p>Niet om het makkelijker te maken. We zijn ervan overtuigd dat een effectieve training niet langer hoeft te duren. Je traint kort, intensief en gericht op je doel.</p>
         </details>
         <details>
-          <summary>Ik heb last van mijn rug of knie. Kan ik dan trainen?</summary>
-          <p>Vaak wel, en het helpt meestal juist. Bij de intake brengen we je klachten in kaart. Waar nodig stem ik af met je fysiotherapeut.</p>
+          <summary>Hoe groot is een small group?</summary>
+          <p>Maximaal zes personen. In een uur train je je hele lichaam, ieder aan zijn eigen doelen en op zijn eigen niveau.</p>
         </details>
         <details>
-          <summary>Hoe vaak per week moet ik komen?</summary>
-          <p>Eén keer per week onder begeleiding, aangevuld met een korte training thuis, levert al duidelijk resultaat op. Twee keer per week gaat sneller.</p>
+          <summary>Zit ik ergens aan vast na de intake?</summary>
+          <p>Nee. De intake is gratis en vrijblijvend. Daarna maak je zelf de keuze of je bij YOUR | physical coach wilt trainen.</p>
         </details>
         <details>
-          <summary>Waar is de studio en kan ik parkeren?</summary>
-          <p>De studio ligt in Elst, op loopafstand van het station. Je kunt gratis parkeren voor de deur. Het precieze adres krijg je bij het maken van je afspraak.</p>
+          <summary>Krijg ik ook hulp met voeding?</summary>
+          <p>Ja. Je trainer is je coach op het gebied van sport, voeding en mindset, ook buiten de trainingen om.</p>
         </details>
         <details>
-          <summary>Wordt personal training vergoed?</summary>
-          <p>Door de zorgverzekeraar meestal niet. Sommige werkgevers vergoeden het wel via een vitaliteitsbudget. Op verzoek krijg je een factuur op naam van je werkgever.</p>
+          <summary>Waar train ik?</summary>
+          <p>Bij YOUR | physical coach, Celsiusweg 18K, 6662 PX Elst.</p>
         </details>
       </div>
     </div>
@@ -416,12 +415,13 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
     <div class="wrap contact">
       <div class="contact-info">
         <p class="label">Contact</p>
-        <h2>Plan je gratis kennismaking</h2>
-        <p style="color:var(--muted)">Laat je gegevens achter. Je hoort binnen één werkdag van me om een moment af te spreken.</p>
+        <h2>Plan je gratis intake</h2>
+        <p class="notice">Is er op dit moment een ledenstop? Meld je dan aan voor de wachtlijst. We nemen contact op zodra er plek is voor een intake.</p>
         <dl>
-          <div><dt>Telefoon / WhatsApp</dt><dd>06 12 34 56 78</dd></div>
-          <div><dt>E-mail</dt><dd>info@ptelst.nl</dd></div>
-          <div><dt>Studio</dt><dd>Elst (Gld), Overbetuwe</dd></div>
+          <div><dt>E-mail</dt><dd>info@yourphysicalcoach.nl</dd></div>
+          <div><dt>Telefoon Ronald</dt><dd>06 41 55 58 27</dd></div>
+          <div><dt>Telefoon Nicolette</dt><dd>06 25 40 07 84</dd></div>
+          <div><dt>Adres</dt><dd>Celsiusweg 18K, 6662 PX Elst</dd></div>
         </dl>
       </div>
       <form id="contact-form" novalidate>
@@ -434,15 +434,13 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
           <label for="interesse">Waar heb je interesse in?</label>
           <select id="interesse" name="interesse">
             <option>Personal training</option>
-            <option>Duo-training</option>
-            <option>Small group</option>
-            <option>Leefstijlcoaching</option>
+            <option>Small group training</option>
             <option>Weet ik nog niet</option>
           </select>
         </div>
-        <div class="field"><label for="doel">Wat wil je bereiken?</label><textarea id="doel" name="doel" placeholder="Bijvoorbeeld: sterker worden, afvallen, minder rugklachten…"></textarea></div>
-        <button class="btn btn-primary" type="submit">Verstuur aanvraag</button>
-        <p class="form-msg" id="form-msg" role="status">Je gegevens gebruik ik alleen om contact met je op te nemen.</p>
+        <div class="field"><label for="doel">Wat wil je bereiken?</label><textarea id="doel" name="doel" placeholder="Bijvoorbeeld: sterker worden, fitter worden, afvallen…"></textarea></div>
+        <button class="btn btn-primary" type="submit">Vraag een intake aan</button>
+        <p class="form-msg" id="form-msg" role="status">Je gegevens worden alleen gebruikt om contact met je op te nemen.</p>
       </form>
     </div>
   </section>
@@ -450,8 +448,8 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
 
 <footer>
   <div class="wrap">
-    <span>© 2026 PT Elst · Personal training in Elst, Overbetuwe</span>
-    <span>KvK 00000000</span>
+    <span>© 2026 Rino de Nijs · YOUR | physical coach, Elst</span>
+    <span>Celsiusweg 18K, 6662 PX Elst</span>
   </div>
 </footer>
 
@@ -459,7 +457,7 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
 (function () {
   var form = document.getElementById('contact-form');
   var msg = document.getElementById('form-msg');
-  var TO = 'info@ptelst.nl';
+  var TO = 'info@yourphysicalcoach.nl';
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     var naam = form.naam.value.trim();
@@ -472,10 +470,10 @@ footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; g
     }
     var body = 'Naam: ' + naam + '\nTelefoon: ' + form.tel.value + '\nE-mail: ' + email +
       '\nInteresse: ' + form.interesse.value + '\n\nDoel:\n' + form.doel.value;
-    var href = 'mailto:' + TO + '?subject=' + encodeURIComponent('Kennismaking aanvragen – ' + naam) +
+    var href = 'mailto:' + TO + '?subject=' + encodeURIComponent('Intake aanvragen (Rino) – ' + naam) +
       '&body=' + encodeURIComponent(body);
     msg.className = 'form-msg ok';
-    msg.textContent = 'Je mailprogramma opent met je aanvraag. Opent er niets? Mail dan naar ' + TO + ' of app naar 06 12 34 56 78.';
+    msg.textContent = 'Je mailprogramma opent met je aanvraag. Opent er niets? Mail dan naar ' + TO + '.';
     window.location.href = href;
   });
 })();
